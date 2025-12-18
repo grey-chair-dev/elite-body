@@ -1,20 +1,111 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Elite Body Works Columbus
 
-# Run and deploy your AI Studio app
+Premium auto body, collision repair, and custom paint specialist website for Columbus, Ohio. Features AI-powered quote assistance and seamless photo uploads.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1rol8QlpMHQHds0xD39-fLFnPECVz4tfE
+- 🚗 Premium collision repair and auto body services
+- 🎨 Custom paint and restoration services
+- 📸 Photo upload for quote requests
+- 🤖 AI-powered quote assistance using Google Gemini
+- 📱 Responsive design with modern UI
+- ⚡ Built with React, TypeScript, and Vite
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling
+- **React Router** - Navigation
+- **Google Gemini AI** - Quote assistance
+- **Lucide React** - Icons
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+- Google Gemini API key
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/grey-chair-dev/elite-body.git
+   cd elite-body
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env.local` file in the root directory:
+   ```bash
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`
+
+## Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build locally
+
+## Project Structure
+
+```
+elite-body/
+├── components/       # Reusable React components
+│   ├── Footer.tsx
+│   └── Navbar.tsx
+├── pages/           # Page components
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Gallery.tsx
+│   ├── Home.tsx
+│   ├── Quote.tsx
+│   ├── Reviews.tsx
+│   └── Services.tsx
+├── services/        # API and service integrations
+│   └── geminiService.ts
+├── App.tsx          # Main app component
+├── index.tsx        # Entry point
+└── vite.config.ts   # Vite configuration
+```
+
+## Environment Variables
+
+- `GEMINI_API_KEY` - Required. Your Google Gemini API key for AI-powered quote assistance.
+
+## Deployment
+
+The project can be deployed to any static hosting service that supports Vite/React applications:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+Build the project first:
+```bash
+npm run build
+```
+
+The output will be in the `dist` directory.
+
+## License
+
+Private - All rights reserved
+
+## Contact
+
+For questions or support, please contact Elite Body Works Columbus.
